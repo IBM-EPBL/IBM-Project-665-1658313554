@@ -1,12 +1,12 @@
 {% extends 'base.html' %}
 
 {% block main %}
-<img class="w-full h-64" src="{{url_for('static', filename='img/background.jpg')}}">
-<p class="font-bold text-3xl px-8 pt-8 underline" style="text-align: center">ABOUT PROJECT</p>
+<img class="w-full h-64 object-cover" src="{{url_for('static', filename='img/background.jpg')}}">
+<p class="font-bold text-4xl px-8 pt-8 text-blue-500" style="text-align: center">About Project</p>
 <div class="grid grid-cols-2">
-	<div class="flex-col bg-white shadow-xl rounded px-8 pt-10 pb-8 m-8 mr-4">
-		<p class="m-auto text-xl font-semibold mb-4">Problem</p>
-		<p>
+	<div class="flex-col bg-blue-700 shadow-xl rounded px-8 pt-10 pb-8 m-8 mr-4">
+		<p class="m-auto text-xl font-semibold mb-4 text-gray-200">Problem</p>
+		<p class="text-gray-300 text-lg">
 			Swimming is one of the best exercises that helps people to reduce stress in this urban lifestyle.
 			Swimming pools are found larger in number in hotels, and weekend tourist spots and barely people have
 			them in their house backyard. Beginners, especially, often feel it difficult to breathe underwater which
@@ -17,9 +17,9 @@
 			meticulous system is to be implemented along the swimming pools to save human life.
 		</p>
 	</div>
-	<div class="flex-col bg-white shadow-xl rounded px-8 pt-10 pb-8 m-8 ml-4">
-	<p class="m-auto text-xl font-semibold mb-4">Solution</p>
-	<p>
+	<div class="flex-col bg-blue-700 shadow-xl rounded px-8 pt-10 pb-8 m-8 ml-4">
+	<p class="m-auto text-xl font-semibold mb-4 text-gray-200">Solution</p>
+	<p class="text-gray-300 text-lg">
 	By studying body movement patterns and connecting cameras to artificial intelligence (AI) systems we can
 	devise an underwater pool safety system that reduces the risk of drowning. Usually, such systems can be
 	developed by installing more than 16 cameras underwater and ceiling and analyzing the video feeds to
