@@ -4,8 +4,7 @@
 <a href="{{url_for('home')}}" class="block mt-4 lg:inline-block lg:mt-0 text-gray-400 hover:text-white mr-4">
     Home
 </a>
-<a href="{{url_for('logout')}}"
-    class="block mt-4 lg:inline-block lg:mt-0 text-gray-400 hover:text-white mr-4">
+<a href="{{url_for('logout')}}" class="block mt-4 lg:inline-block lg:mt-0 text-gray-400 hover:text-white mr-4">
     Logout
 </a>
 {% endblock %}
@@ -31,6 +30,10 @@
     <div class="flex-col bg-white shadow-xl rounded px-8 pt-10 pb-8 m-8 ml-4">
         <img class="h-64 m-auto" src="{{url_for('static', filename='img/background.jpg')}}">
         <p class="text-red-500 text-xl text-bold" style="text-align: center">{{ prediction }}</p>
+        <form method="post" action="{{url_for('prediction')}}">
+            <input name="demo" type="submit" value="Click me! For a demo"
+                class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full block m-auto mt-4 mb-4">
+        </form>
     </div>
 </div>
 {% endblock %}
