@@ -16,7 +16,7 @@
 <div class="grid grid-cols-2">
     <div class="flex-col bg-blue-700 shadow-xl rounded px-8 pt-10 pb-8 m-8 mr-4">
         <p class="m-auto text-xl text-gray-200 font-semibold mb-4">Problem</p>
-        <p>
+        <p class="text-gray-300 text-lg">
             Swimming is one of the best exercises that helps people to reduce stress in this urban lifestyle.
             Swimming pools are found larger in number in hotels, and weekend tourist spots and barely people have
             them in their house backyard. Beginners, especially, often feel it difficult to breathe underwater which
@@ -29,11 +29,8 @@
 
     </div>
     <div class="flex-col bg-white shadow-xl rounded px-8 pt-10 pb-8 m-8 ml-4">
-        <img class="h-56 m-auto" src="{{url_for('static', filename='img/background.jpg')}}">
-        <button
-            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full block m-auto mt-4 mb-4">Click
-            me! For a demo</button>
-        <p style="text-align: center">{{ prediction }}</p>
+        <img class="h-64 m-auto" src="{{url_for('static', filename='img/background.jpg')}}">
+        <p class="text-red-500 text-xl text-bold" style="text-align: center">{{ prediction }}</p>
     </div>
 </div>
 {% endblock %}
