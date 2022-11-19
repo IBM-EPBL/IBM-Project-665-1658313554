@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block navbar %}
+<a href="{{url_for('home')}}" class="block mt-4 lg:inline-block lg:mt-0 text-gray-400 hover:text-white mr-4">
+    Home
+</a>
+<a href="{{url_for('logout')}}"
+    class="block mt-4 lg:inline-block lg:mt-0 text-gray-400 hover:text-white mr-4">
+    Logout
+</a>
+{% endblock %}
+
+{% block main %}
+<p class="font-bold text-4xl px-8 pt-8 text-blue-500" style="text-align: center">VirtualEye - Life Guard for Swimming
+    Pools to Detect Active Drowning</p>
+<div class="grid grid-cols-2">
+    <div class="flex-col bg-blue-700 shadow-xl rounded px-8 pt-10 pb-8 m-8 mr-4">
+        <p class="m-auto text-xl text-gray-200 font-semibold mb-4">Problem</p>
+        <p class="text-gray-300 text-lg">
+            Swimming is one of the best exercises that helps people to reduce stress in this urban lifestyle.
+            Swimming pools are found larger in number in hotels, and weekend tourist spots and barely people have
+            them in their house backyard. Beginners, especially, often feel it difficult to breathe underwater which
+            causes breathing trouble which in turn causes a drowning accident. Worldwide, drowning produces a higher
+            rate of mortality without causing injury to children. Children under six of their age are found to be
+            suffering the highest drowning mortality rates worldwide. Such kinds of deaths account for the third
+            cause of unplanned death globally, with about 1.2 million cases yearly. To overcome this conflict, a
+            meticulous system is to be implemented along the swimming pools to save human life.
+        </p>
+
+    </div>
+    <div class="flex-col bg-white shadow-xl rounded px-8 pt-10 pb-8 m-8 ml-4">
+        <img class="h-64 m-auto" src="{{url_for('static', filename='img/background.jpg')}}">
+        <p class="text-red-500 text-xl text-bold" style="text-align: center">{{ prediction }}</p>
+    </div>
+</div>
+{% endblock %}
